@@ -34,7 +34,6 @@
 	
 <title>NoticeBoard</title>
 
-<meta charset="UTF-8">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="">
@@ -92,7 +91,7 @@
 
 	<div class="wrapper" style="margin: 50px auto;">
 		<div class="container">
-			<div class="row">
+			<div class="row" style="margin: 50px;">
 				<div class="col-md-8 col-md-offset-2">
 					<div class="description">
 						<h2>Board</h2>
@@ -122,9 +121,10 @@
 										<td>${b.end_time}</td>
 
 										<td><c:if test="${sessionScope.login_user.type eq 'M'}">
-												<a
-													href="<%=path%>/noticeboard/reservation_form.jsp?pid=${b.p_id}&day=${b.day}&seq=${b.brd_seq}">
-													reservation </a>
+											<a href ="board_con.ck">reservation</a>
+<!-- 												<a -->
+<%-- 													href="<%=path%>/noticeboard/reservation_form.jsp?pid=${b.p_id}&day=${b.day}&seq=${b.brd_seq}&title=${b.title}&content=${b.content}"> --%>
+<!-- 													reservation </a> -->
 											</c:if></td>
 									</tr>
 								</c:forEach>

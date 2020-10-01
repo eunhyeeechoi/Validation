@@ -59,6 +59,14 @@ public class NoticeBoardController {
 		return "redirect:/noticeboard.ck";
 	}
 
+	@RequestMapping(value = "board_con.ck")
+	public ModelAndView Board_Con() {
+		ModelAndView cont = new ModelAndView("noticeboard/reservation_form");
+		List<NoticeBoardVO> con = noticeboardbiz.boardAll();
+		cont.addObject("con", con);
+		return cont;
+	}
+
 //	@ResponseBody
 	@RequestMapping(method = RequestMethod.POST, value = "/searchNotice.ck")
 	public ModelAndView searchNotice(@RequestParam("date") String date, @RequestParam("cnt") int max,

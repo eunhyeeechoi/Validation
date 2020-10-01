@@ -72,7 +72,7 @@
 		</div>
 	</nav>
 	<div class="container" style="margin: 50px 0px 50px 30%;">
-		<div class="row">
+		<div class="row" style="margin: 50px;">
 			<form action="/CHAL-KAK/noticeForm.ck" method="post">
 				<table class="table" style="text-align: center;">
 					<thead >
