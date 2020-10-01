@@ -28,7 +28,6 @@ public class LoginDaoImpl implements LoginDao {
 		} finally {
 			session.close();
 		}
-
 		return res;
 	}
 
@@ -63,5 +62,5 @@ public class LoginDaoImpl implements LoginDao {
 		}
 		return res;
 	}
-	
+
 }

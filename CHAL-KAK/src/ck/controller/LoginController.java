@@ -63,7 +63,7 @@ public class LoginController {
 			return mav;
 		}
 	}
-	
+
 	@RequestMapping(value = "/logout.ck")
 	public ModelAndView logout(SessionStatus sessionStatus) {
 		sessionStatus.setComplete();
