@@ -25,5 +25,5 @@ public class LoginBiz {
 	public AdministratorVO searchAdministrator(AdministratorVO vo) {
 		return logindao.searchAdministrator(vo);
 	}
-	
+
 }
