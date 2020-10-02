@@ -41,6 +41,7 @@ public class NoticeBoardController {
 	@RequestMapping(value = "/board_one.ck")
 	public ModelAndView Board_one(@RequestParam("seq") int seq) {
 		ModelAndView mav = new ModelAndView("noticeboard/board_one");
+		System.out.println("seq..." + seq);
 		List<NoticeBoardVO> vo = noticeboardbiz.boardOne(seq);
 		mav.addObject("one", vo);
 		return mav;
@@ -60,9 +61,9 @@ public class NoticeBoardController {
 	}
 
 	@RequestMapping(value = "board_con.ck")
-	public ModelAndView Board_Con() {
+	public ModelAndView Board_Con(@RequestParam("seq") int seq) {
 		ModelAndView cont = new ModelAndView("noticeboard/reservation_form");
-		List<NoticeBoardVO> con = noticeboardbiz.boardAll();
+		List<NoticeBoardVO> con = noticeboardbiz.boardOne(seq);
 		cont.addObject("con", con);
 		return cont;
 	}
