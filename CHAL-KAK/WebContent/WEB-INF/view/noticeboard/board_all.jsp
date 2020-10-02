@@ -121,7 +121,7 @@
 										<td>${b.end_time}</td>
 
 										<td><c:if test="${sessionScope.login_user.type eq 'M'}">
-											<a href ="board_con.ck">reservation</a>
+											<a href ="board_con.ck?seq=${b.brd_seq}">reservation</a>
 <!-- 												<a -->
 <%-- 													href="<%=path%>/noticeboard/reservation_form.jsp?pid=${b.p_id}&day=${b.day}&seq=${b.brd_seq}&title=${b.title}&content=${b.content}"> --%>
 <!-- 													reservation </a> -->
