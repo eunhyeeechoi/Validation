@@ -139,7 +139,7 @@
 							<tr>
 								<td>Place</td>
 								<td><input type="text" class="form-control"
-									placeholder="장소" name="place" /></td>
+									placeholder="장소" name="place" value="${content.place}" readonly="readonly"/></td>
 							</tr>
 							<tr>
 								<td>Number of People</td>

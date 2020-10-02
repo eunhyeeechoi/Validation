@@ -14,6 +14,15 @@ public class ReservationVO {
 	private String end_time;
 	private int progress;
 	private int people_num;
+	private String place;
+	public String getPlace() {
+		return place;
+	}
+
+	public void setPlace(String place) {
+		this.place = place;
+	}
+
 	@DateTimeFormat(iso = ISO.DATE)
 	private Date day;
 
@@ -93,8 +102,5 @@ public class ReservationVO {
 	public void setPeople_num(int people_num) {
 		this.people_num = people_num;
 	}
-	
-	
 
-	
 }

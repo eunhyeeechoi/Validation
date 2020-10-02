@@ -72,9 +72,9 @@ public class NoticeBoardDaoImpl implements NoticeBoardDao {
 
 	@Override
 	public int insertReservationForm(ReservationVO vo) {
-		return jdbcTemplate.update("insert into reservation values (rev_seq.nextval,?,?,?,?,?,?,0,?)",
-				new Object[] { vo.getBrd_seq(), vo.getM_id(), vo.getConcept(), vo.getPeople_num(), vo.getStart_time(),
-						vo.getEnd_time(), vo.getDay() });
+		return jdbcTemplate.update("insert into reservation values (rev_seq.nextval,?,?,?,?,?,?,?,0,?)",
+				new Object[] { vo.getBrd_seq(), vo.getM_id(), vo.getConcept(), vo.getPeople_num(), vo.getPlace(),
+						vo.getStart_time(), vo.getEnd_time(), vo.getDay() });
 	}
 
 	@Override
