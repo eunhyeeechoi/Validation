@@ -149,13 +149,15 @@
 
 							<tr>
 								<td>Concept</td>
-								<td><input type="radio" name="lock" value="0" id="r0"
-									checked> <label for="r0">독사진</label> &emsp;&emsp; <input
-									type="radio" name="lock" value="1" id="r1"> <label
-									for="r1">우정사진</label>&emsp;&emsp; <input type="radio"
-									name="notice" value="2" id="r2"> <label for="r2">커플사진</label>&emsp;&emsp;
-									<input type="radio" name="notice" value="3" id="r3"> <label
-									for="r3">가족사진</label></td>
+								<td>
+									<input type="radio" name="concept" value="0" id="r0" checked>
+									<label for="r0">독사진</label> &emsp;&emsp; 
+									<input type="radio" name="concept" value="1" id="r1"> 
+									<label for="r1">우정사진</label> &emsp;&emsp; 
+									<input type="radio" name="concept" value="2" id="r2"> 
+									<label for="r2">커플사진</label>&emsp;&emsp;
+									<input type="radio" name="concept" value="3" id="r3"> 
+									<label for="r3">가족사진</label></td>
 							</tr>
 						</tbody>
 					</table>
