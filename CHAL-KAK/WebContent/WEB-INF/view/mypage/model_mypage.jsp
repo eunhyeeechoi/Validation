@@ -82,7 +82,8 @@
 				<c:if test="${concept eq '3'}">
 					<c:out value="가족사진"></c:out>
 				</c:if>
-		${reserv.PEOPLE_NUM}&nbsp;&nbsp;&nbsp;
+				${reserv.PEOPLE_NUM}명
+				&nbsp;&nbsp;&nbsp;
 		<fmt:formatDate value="${reserv.DAY}" pattern="yyyy.MM.dd" />
 		${reserv.START_TIME}&nbsp;&nbsp;&nbsp;
 		${reserv.END_TIME}&nbsp;&nbsp;&nbsp;
@@ -96,6 +97,8 @@
 				<c:if test="${progress eq '2'}">
 					<c:out value="날짜만료"></c:out>
 				</c:if>
+			&nbsp;&nbsp;&nbsp;
+			${reserv.place}
 				<hr>
 			</c:forEach>
 		</c:if>

@@ -79,6 +79,7 @@ public class NoticeBoardController {
 		vo.setDay(day);
 		vo.setMax(max);
 		vo.setConcept(concept);
+		
 		List<NoticeBoardVO> list = noticeboardbiz.searchBoard(vo);
 		System.out.println(list);
 		ModelAndView mav = new ModelAndView("/noticeboard/searchResult", "result", list);
